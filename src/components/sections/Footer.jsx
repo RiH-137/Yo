@@ -3,8 +3,10 @@ import styled from "styled-components";
 import { Bio } from "../../data/constants";
 import {
   LinkedIn,
-  Twitter,
+  Twitter
+  
 } from "@mui/icons-material";
+import MailIcon from '@mui/icons-material/Mail';
 
 const FooterContainer = styled.div`
   width: 100%;
@@ -94,9 +96,10 @@ const Footer = () => {
           <NavLink href="#Education">Education</NavLink>
         </Nav>
         <SocialMediaIcons>
-          <SocialMediaIcon href={Bio.facebook} target="display">
-     
-          </SocialMediaIcon>
+        <SocialMediaIcon href={`mailto:${Bio.email}`} target="_blank">
+  <MailIcon />
+</SocialMediaIcon>
+
           <SocialMediaIcon href={Bio.twitter} target="display">
             <Twitter />
           </SocialMediaIcon>
@@ -104,7 +107,6 @@ const Footer = () => {
             <LinkedIn />
           </SocialMediaIcon>
           <SocialMediaIcon href={Bio.insta} target="display">
-            
           </SocialMediaIcon>
         </SocialMediaIcons>
         <Copyright>&copy; 2024 Rishi Ranjan. All rights reserved.</Copyright>

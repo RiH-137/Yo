@@ -19,6 +19,7 @@ export const Bio = {
   leetcode_practice: "https://leetcode.com/u/rishi_rih/",
   gfg: "https://www.geeksforgeeks.org/user/rih_137/",
   twitter: "https://x.com/rih__theory",
+  email:"101rishidsr@gmail.com",
   
 };
 
