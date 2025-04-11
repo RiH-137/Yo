@@ -20,6 +20,7 @@ const Wrapper = styled.div`
   width: 100%;
   max-width: 1100px;
   gap: 12px;
+
   @media (max-width: 960px) {
     flex-direction: column;
   }
@@ -31,6 +32,7 @@ const Title = styled.div`
   font-weight: 600;
   margin-top: 20px;
   color: ${({ theme }) => theme.text_primary};
+
   @media (max-width: 768px) {
     margin-top: 12px;
     font-size: 32px;
@@ -42,6 +44,7 @@ const Desc = styled.div`
   text-align: center;
   font-weight: 600;
   color: ${({ theme }) => theme.text_secondary};
+
   @media (max-width: 768px) {
     font-size: 16px;
   }
@@ -77,6 +80,7 @@ const ContactInput = styled.input`
   color: ${({ theme }) => theme.text_primary};
   border-radius: 12px;
   padding: 12px 16px;
+
   &:focus {
     border: 1px solid ${({ theme }) => theme.primary};
   }
@@ -91,6 +95,7 @@ const ContactInputMessage = styled.textarea`
   color: ${({ theme }) => theme.text_primary};
   border-radius: 12px;
   padding: 12px 16px;
+
   &:focus {
     border: 1px solid ${({ theme }) => theme.primary};
   }
@@ -98,7 +103,6 @@ const ContactInputMessage = styled.textarea`
 
 const ContactButton = styled.input`
   width: 100%;
-  text-decoration: none;
   text-align: center;
   background: hsla(271, 100%, 50%, 1);
   padding: 13px 16px;
@@ -108,7 +112,6 @@ const ContactButton = styled.input`
   color: ${({ theme }) => theme.text_primary};
   font-size: 18px;
   font-weight: 600;
-  cursor: pointer;
 `;
 
 const Contact = () => {
@@ -119,19 +122,19 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_6030ok7",      
-        "template_xrbkysu",   
+        "service_6030ok7",       
+        "template_r5qtghj",       
         form.current,
-        "HxqtCySxZpAMZVgfl"     
+        "HxqtCySxZpAMZVgfl"       
       )
       .then(
         (result) => {
           alert("Message sent successfully!");
-          form.current.reset(); // Clear form after submission
+          form.current.reset();
         },
         (error) => {
-          alert("Failed to send message. Please try again.");
-          console.error(error);
+          console.error("Email send error:", error.text);
+          alert("Message failed. Please try again.");
         }
       );
   };
@@ -146,8 +149,8 @@ const Contact = () => {
         <ContactForm ref={form} onSubmit={handleSubmit}>
           <ContactTitle>Email Me 🚀</ContactTitle>
           <ContactInput type="email" placeholder="Your Email" name="from_email" required />
-          <ContactInput type="text" placeholder="Your Name" name="from_name" required />
-          <ContactInput type="text" placeholder="Subject" name="subject" required />
+          <ContactInput placeholder="Your Name" name="from_name" required />
+          <ContactInput placeholder="Subject" name="subject" required />
           <ContactInputMessage placeholder="Message" name="message" rows={4} required />
           <ContactButton type="submit" value="Send" />
         </ContactForm>
