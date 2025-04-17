@@ -337,6 +337,7 @@ export const education = [
     date: "Nov 2022 - July 2026",
     desc: "I am currently pursuing a Bachelor's degree in Computer Science and Engineering at Noida Institute of Engineering and Technology. I have completed 5 semesters and have a CGPA of 8.0. I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among others. I am also a member of the Google Developers Group(GDG) at NIET, where I am learning and working on exciting projects with a team of talented developers.",
     degree: "Bachelor of Technology - BTech, Computer Science and Engineering",
+    
   },
   {
     id: 1,
@@ -344,6 +345,7 @@ export const education = [
     school: "Dr. A.P.J. Abdul Kalam Technical University",
     date: "Nov 2022 - July 2026",
     degree: "Bachelor of Technology - BTech, Computer Science and Engineering",
+    grade: "A",
   },
   {
     id: 2,
