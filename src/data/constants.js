@@ -15,7 +15,7 @@ export const Bio = {
   resume:
     "https://drive.google.com/drive/folders/1G-OLVn4mPoyCimbOS6ZcV-O-LOClNTZY?usp=sharing",
   linkedin: "https://www.linkedin.com/in/rishi-rih/",
-  leetcode_contest:"https://leetcode.com/u/RiH-performer/",
+  leetcode_contest:"https://leetcode.com/u/rih__thekid/",
   leetcode_practice: "https://leetcode.com/u/rishi_rih/",
   gfg: "https://www.geeksforgeeks.org/user/rih_137/",
   twitter: "https://x.com/rih__theory",
