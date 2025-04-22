@@ -59,7 +59,7 @@ const Experience = () => {
             marginBottom: "40px",
           }}
         >
-          My work experience as a software engineer and working on different
+          My work experience as an Intern and a leader and working with
           companies and projects.
         </Desc>
 

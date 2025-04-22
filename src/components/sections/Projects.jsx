@@ -195,8 +195,13 @@ const Projects = () => {
             marginBottom: "40px",
           }}
         >
-          I have worked on a wide range of projects. From web apps to android
-          apps. Here are some of my projects.
+          I have worked on a wide range of projects. From web apps to Machine learning
+          projects, I have a passion for creating innovative and user-friendly
+          projects. I have experience in a variety of programming languages and
+          frameworks, and I am always looking for new challenges and opportunities
+          to learn and grow. I have a strong interest in web development and
+          machine learning, and I enjoy working on projects that involve these tech stack.
+          Here are some of my projects.
         </Desc>
 
         <ToggleButtonGroup>
