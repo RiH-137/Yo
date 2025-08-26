@@ -10,6 +10,8 @@ import StartCanvas from "./components/canvas/Stars";
 import Projects from "./components/sections/Projects";
 import Contact from "./components/sections/Contact";
 import Footer from "./components/sections/Footer";
+import CustomCursor from "./components/CustomCursor";
+import { useState } from "react";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -35,27 +37,28 @@ const Wrapper = styled.div`
 `;
 
 function App() {
+  const [currentSection, setCurrentSection] = useState('hero');
+
   return (
     <ThemeProvider theme={darkTheme}>
-   
-        <Navbar />
-        <Body>
-          <StartCanvas />
-          <div>
-            <Hero />
-            <Wrapper>
-              <Skills />
-              <Experience />
-            </Wrapper>
-            <Projects />
-            <Wrapper>
-              <Education />
-              <Contact />
-            </Wrapper>
-            <Footer />
-          </div>
-        </Body>
-      
+      <CustomCursor onSectionChange={setCurrentSection} />
+      <Navbar />
+      <Body>
+        <StartCanvas />
+        <div>
+          <Hero />
+          <Wrapper>
+            <Skills />
+            <Experience />
+          </Wrapper>
+          <Projects />
+          <Wrapper>
+            <Education />
+            <Contact />
+          </Wrapper>
+          <Footer />
+        </div>
+      </Body>
     </ThemeProvider>
   );
 }

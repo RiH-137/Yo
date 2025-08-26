@@ -219,7 +219,7 @@ const HeroBg = styled.div`
 
 const Hero = () => {
   return (
-    <div id="About">
+    <div id="hero">
       <HeroContainer>
         <HeroBg>
           <StarCanvas />
@@ -251,7 +251,7 @@ const Hero = () => {
                 <SubTitle>{Bio.description}</SubTitle>
               </motion.div>
 
-              <ResumeButton href={Bio.resume} target="_blank">
+              <ResumeButton href={Bio.resume} target="_blank" className="clickable">
                 Check Resume
               </ResumeButton>
 

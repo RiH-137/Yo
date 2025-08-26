@@ -282,6 +282,51 @@ export const skills = [
 export const experiences = [
   {
     id: 0,
+    img: "https://github.com/RiH-137/image-assets/blob/main/espyr.jpg?raw=true",
+    role: "SDE Intern",
+    company: "Espyr",
+    date: "June 2025 - August 2025",
+    desc: "Built scalable multi-agent AI system for educational assistanceusing LangGraph. Developed React.js UI and FastAPI backend with REST APIs, database integration, and cross-functional collaboration.",
+    skills: [
+       "Python", "React.js", "LangGraph", "FastAPI", "REST API",
+       "Databases", "Git", "GitHub", "Generative AI"
+    ],
+    doc: "",
+  },
+  {
+    id: 2,
+    img: "https://github.com/RiH-137/image-assets/blob/main/swapso_logo.jpg?raw=true",
+    role: "Frontend Dev Intern",
+    company: "Swapso.io",
+    date: "January 2025 - March 2025",
+    desc: "Built a responsive website using Next.js and UI frameworks,focusing on UI and module development, turning Figma designs into functional features. Contributed to software design, solution architecture, web content development, and workflow optimization.",
+    skills: [
+      "Next.js, Tailwind CSS, Figma, React.js, Git, GitHub"
+    ],
+    doc: "",
+  },
+  {
+    id: 2,
+    img: "https://github.com/RiH-137/image-assets/blob/main/CohortLab%20logo.jpg?raw=true",
+    role: "Co-Founder",
+    company: "CohortLab",
+    date: "October 2024 - Present",
+    // desc: "Worked with machine learning and deep learning algorithms like CNN and gain experienced in working with tools like OpenCv, Tensorflow.",
+    // skills: [
+    //   "Python",
+    //   "Tensorflow",
+    //   "Keras",
+    //   "OpenCV",
+    //   "NumPy",
+    //   "Pandas",
+    //   "Scikit-learn",
+    //   "Data Visualization",
+    //   "Problem Solving",
+    // ],
+    // doc: "https://drive.google.com/file/d/1SJobAgBvfwTYZzPrSyuD9EvmM1Z6w-WF/view?usp=sharing",
+  },
+  {
+    id: 3,
     img: "https://upload.wikimedia.org/wikipedia/en/e/eb/All_India_Council_for_Technical_Education_logo.png",
     role: "Machine Learning Intern",
     company: "AICTE-Eduskills",
@@ -301,7 +346,7 @@ export const experiences = [
     doc: "https://drive.google.com/file/d/1SJobAgBvfwTYZzPrSyuD9EvmM1Z6w-WF/view?usp=sharing",
   },
   {
-    id: 1,
+    id: 4,
     img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/gdsc.jpeg?alt=media&token=c162329c-efaa-4be8-a173-8d3f4c48ea70",
     role: "Technical Lead",
     company: "Google Developers Group - NIET",
@@ -315,7 +360,7 @@ export const experiences = [
     ],
   },
   {
-    id: 2,
+    id: 5,
     img: "https://github.com/RiH-137/image-assets/blob/main/ss.png?raw=true",
     role: "Vice President",
     company: "Signodes - NIET",
